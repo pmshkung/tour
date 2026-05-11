@@ -51,11 +51,14 @@ body{
   font-size:48px;background:linear-gradient(135deg,#f0f0f5 0%,#e8e8ed 100%)
 }
 .stop-body{padding:24px}
-.stop-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.stop-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
 .stop-time{
-  background:#f5f5f7;color:#1d1d1f;font-size:13px;font-weight:600;
-  padding:4px 12px;border-radius:12px;white-space:nowrap;flex-shrink:0
+  display:inline-flex;align-items:center;gap:6px;
+  background:#1d1d1f;color:#fff;font-size:18px;font-weight:700;
+  padding:8px 18px;border-radius:14px;white-space:nowrap;flex-shrink:0;
+  letter-spacing:-.01em;line-height:1.2
 }
+.stop-time::before{content:'🕐';font-size:15px}
 .stop-type-badge{
   font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;
   white-space:nowrap;flex-shrink:0;letter-spacing:.04em
@@ -176,7 +179,7 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
     <div class="stop-img-placeholder" style="display:none">🍞</div>
     <div class="stop-body">
       <div class="stop-header">
-        <div class="stop-time">13:00</div>
+        <div class="stop-time">13:00 集合</div>
         <div class="stop-type-badge type-bakery">麵包秘境</div>
       </div>
       <div class="stop-name">E-ma 柴燒窯烤歐式麵包</div>
@@ -229,7 +232,7 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
     <div class="stop-img-placeholder" style="display:none">🪵</div>
     <div class="stop-body">
       <div class="stop-header">
-        <div class="stop-time">14:00</div>
+        <div class="stop-time">14:00 集合</div>
         <div class="stop-type-badge type-attraction">文化景點</div>
       </div>
       <div class="stop-name">三義木雕博物館</div>
@@ -333,7 +336,7 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
     <div class="stop-img-placeholder" style="display:none">🛝</div>
     <div class="stop-body">
       <div class="stop-header">
-        <div class="stop-time">16:30</div>
+        <div class="stop-time">16:30 集合</div>
         <div class="stop-type-badge type-park">親子公園</div>
       </div>
       <div class="stop-name">灣麗親子公園</div>
@@ -439,7 +442,7 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
     <div class="stop-img-placeholder" style="display:none">🏊</div>
     <div class="stop-body">
       <div class="stop-header">
-        <div class="stop-time">19:30</div>
+        <div class="stop-time">19:30 集合</div>
         <div class="stop-type-badge type-hotel">飯店活動</div>
       </div>
       <div class="stop-name">享沐時光莊園 游泳池 玩水</div>
@@ -571,7 +574,7 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
     <div class="stop-img-placeholder" style="display:none">🏛</div>
     <div class="stop-body">
       <div class="stop-header">
-        <div class="stop-time">14:30</div>
+        <div class="stop-time">14:30 集合</div>
         <div class="stop-type-badge type-attraction">文化景點</div>
       </div>
       <div class="stop-name">台灣客家文化館</div>
