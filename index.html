@@ -127,6 +127,46 @@ body{
 
 footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1px solid #e8e8ed;background:#f5f5f7}
 
+.overview-section{
+  background:#fff;border-bottom:1px solid rgba(0,0,0,.08);
+  padding:40px 20px 48px
+}
+.overview-inner{max-width:760px;margin:0 auto}
+.overview-title{
+  font-size:12px;font-weight:600;color:#6e6e73;
+  letter-spacing:.1em;text-transform:uppercase;
+  text-align:center;margin-bottom:28px
+}
+.overview-days{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.overview-day{background:#f5f5f7;border-radius:18px;padding:22px 24px}
+.overview-day-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.overview-day-badge{
+  background:#1d1d1f;color:#fff;font-size:12px;font-weight:600;
+  padding:4px 12px;border-radius:10px;letter-spacing:.04em;white-space:nowrap;flex-shrink:0
+}
+.overview-day-route{font-size:13px;color:#6e6e73}
+.overview-day-date{font-size:12px;color:#aeaeb2;margin-bottom:16px;padding-left:2px}
+.overview-stop{display:flex;align-items:flex-start;gap:10px;margin-bottom:9px}
+.overview-stop:last-child{margin-bottom:0}
+.overview-stop-time{
+  font-size:12px;font-weight:600;color:#1d1d1f;
+  white-space:nowrap;min-width:62px;padding-top:2px;flex-shrink:0
+}
+.overview-stop-dot{
+  width:7px;height:7px;border-radius:50%;background:#d2d2d7;
+  flex-shrink:0;margin-top:4px
+}
+.overview-stop-name{font-size:13px;color:#3a3a3c;line-height:1.45}
+.overview-stop-tag{
+  display:inline-block;font-size:10px;font-weight:600;
+  padding:2px 7px;border-radius:6px;margin-left:5px;vertical-align:middle;letter-spacing:.02em
+}
+
+@media(max-width:600px){
+  .overview-days{grid-template-columns:1fr}
+  .overview-section{padding:32px 16px 40px}
+}
+
 @media(max-width:600px){
   .info-grid{grid-template-columns:1fr}
   .hero-meta{gap:24px}
@@ -157,6 +197,84 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
     <div class="meta-item">
       <div class="meta-num">1</div>
       <div class="meta-label">親子飯店</div>
+    </div>
+  </div>
+</div>
+
+<!-- 行程大綱 -->
+<div class="overview-section">
+  <div class="overview-inner">
+    <div class="overview-title">行程大綱</div>
+    <div class="overview-days">
+
+      <!-- DAY 1 -->
+      <div class="overview-day">
+        <div class="overview-day-header">
+          <div class="overview-day-badge">DAY 1</div>
+          <div class="overview-day-route">台南 → 三義 → 苑裡</div>
+        </div>
+        <div class="overview-day-date">5月18日（日）</div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">13:00</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">E-ma 柴燒窯烤歐式麵包<span class="overview-stop-tag type-bakery">麵包秘境</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">14:00</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">三義木雕博物館<span class="overview-stop-tag type-attraction">文化景點</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">15:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">享沐時光莊園渡假酒店 Check-in<span class="overview-stop-tag type-hotel">住宿</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">16:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">灣麗親子公園<span class="overview-stop-tag type-park">親子公園</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">18:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">苑裡九妹牛肉麵館<span class="overview-stop-tag type-food">晚餐</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">19:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">享沐時光 游泳池 ＋ 溫泉<span class="overview-stop-tag type-hotel">飯店活動</span></div>
+        </div>
+      </div>
+
+      <!-- DAY 2 -->
+      <div class="overview-day">
+        <div class="overview-day-header">
+          <div class="overview-day-badge">DAY 2</div>
+          <div class="overview-day-route">苑裡 → 銅鑼 → 台南</div>
+        </div>
+        <div class="overview-day-date">5月19日（一）</div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">~11:00</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">享沐時光 早晨玩水／飯店放電<span class="overview-stop-tag type-hotel">退房前</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">12:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">連記甘味花園餐廳<span class="overview-stop-tag type-food">午餐</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">14:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">台灣客家文化館<span class="overview-stop-tag type-attraction">文化景點</span></div>
+        </div>
+        <div class="overview-stop">
+          <div class="overview-stop-time">16:30</div>
+          <div class="overview-stop-dot"></div>
+          <div class="overview-stop-name">🏠 出發回台南（預計 19:00 抵達）</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -371,6 +489,9 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
       <a class="map-btn" href="https://maps.google.com/?q=灣麗親子公園+苗栗縣苑裡鎮育才街100號" target="_blank" rel="noopener">
         <span class="map-icon">🗺</span> 在 Google 地圖開啟
       </a>
+      <a class="map-btn" href="https://maps.app.goo.gl/pSsYmDSs7qMjcRCg9" target="_blank" rel="noopener" style="margin-left:8px">
+        <span class="map-icon">🅿️</span> 停車場導航
+      </a>
     </div>
   </div>
 
@@ -555,6 +676,9 @@ footer{text-align:center;padding:24px;color:#aeaeb2;font-size:12px;border-top:1p
       </div>
       <a class="map-btn" href="https://maps.google.com/?q=連記甘味花園餐廳+苗栗縣銅鑼鄉九湖村" target="_blank" rel="noopener">
         <span class="map-icon">🗺</span> 在 Google 地圖開啟
+      </a>
+      <a class="map-btn" href="https://maps.app.goo.gl/6fgjX1WmrWYMQN8H7" target="_blank" rel="noopener" style="margin-left:8px">
+        <span class="map-icon">🅿️</span> 停車場導航
       </a>
     </div>
   </div>
